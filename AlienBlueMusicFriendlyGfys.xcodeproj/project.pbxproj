@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B17F8A21C2F843E00CA0F5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B17F8A11C2F843E00CA0F5C /* Foundation.framework */; };
+		3B17F8AD1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B17F8AC1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B17F89E1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AlienBlueMusicFriendlyGfys.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B17F8A11C2F843E00CA0F5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B17F8A61C2F843E00CA0F5C /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		3B17F8A71C2F843E00CA0F5C /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		3B17F8A91C2F843E00CA0F5C /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		3B17F8AA1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlienBlueMusicFriendlyGfys-Prefix.pch"; sourceTree = "<group>"; };
+		3B17F8AB1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = AlienBlueMusicFriendlyGfys.xm; sourceTree = "<group>"; };
+		3B17F8AC1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AlienBlueMusicFriendlyGfys.mm; sourceTree = "<group>"; };
+		3B17F8B11C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AlienBlueMusicFriendlyGfys.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/AlienBlueMusicFriendlyGfys.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B17F89A1C2F843E00CA0F5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B17F8A21C2F843E00CA0F5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B17F8931C2F843E00CA0F5C = {
+			isa = PBXGroup;
+			children = (
+				3B17F8A31C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys */,
+				3B17F8A01C2F843E00CA0F5C /* Frameworks */,
+				3B17F89F1C2F843E00CA0F5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B17F89F1C2F843E00CA0F5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F89E1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B17F8A01C2F843E00CA0F5C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F8A11C2F843E00CA0F5C /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B17F8A31C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F8AB1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.xm */,
+				3B17F8AC1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.mm */,
+				3B17F8A41C2F843E00CA0F5C /* Package */,
+				3B17F8A81C2F843E00CA0F5C /* Supporting Files */,
+			);
+			path = AlienBlueMusicFriendlyGfys;
+			sourceTree = "<group>";
+		};
+		3B17F8A41C2F843E00CA0F5C /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F8A51C2F843E00CA0F5C /* DEBIAN */,
+				3B17F8AE1C2F843E00CA0F5C /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		3B17F8A51C2F843E00CA0F5C /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F8A61C2F843E00CA0F5C /* control.txt */,
+				3B17F8A71C2F843E00CA0F5C /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		3B17F8A81C2F843E00CA0F5C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F8A91C2F843E00CA0F5C /* PackageVersion.plist */,
+				3B17F8AA1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3B17F8AE1C2F843E00CA0F5C /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F8AF1C2F843E00CA0F5C /* MobileSubstrate */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		3B17F8AF1C2F843E00CA0F5C /* MobileSubstrate */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F8B01C2F843E00CA0F5C /* DynamicLibraries */,
+			);
+			name = MobileSubstrate;
+			sourceTree = "<group>";
+		};
+		3B17F8B01C2F843E00CA0F5C /* DynamicLibraries */ = {
+			isa = PBXGroup;
+			children = (
+				3B17F8B11C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.plist */,
+			);
+			name = DynamicLibraries;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3B17F89B1C2F843E00CA0F5C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3B17F89D1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B17F8B41C2F843E00CA0F5C /* Build configuration list for PBXNativeTarget "AlienBlueMusicFriendlyGfys" */;
+			buildPhases = (
+				3B17F8981C2F843E00CA0F5C /* ShellScript */,
+				3B17F8991C2F843E00CA0F5C /* Sources */,
+				3B17F89A1C2F843E00CA0F5C /* Frameworks */,
+				3B17F89B1C2F843E00CA0F5C /* Headers */,
+				3B17F89C1C2F843E00CA0F5C /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlienBlueMusicFriendlyGfys;
+			productName = AlienBlueMusicFriendlyGfys;
+			productReference = 3B17F89E1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B17F8941C2F843E00CA0F5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					3B17F89D1C2F843E00CA0F5C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 3B17F8971C2F843E00CA0F5C /* Build configuration list for PBXProject "AlienBlueMusicFriendlyGfys" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3B17F8931C2F843E00CA0F5C;
+			productRefGroup = 3B17F89F1C2F843E00CA0F5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B17F89D1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3B17F8981C2F843E00CA0F5C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp-logos";
+		};
+		3B17F89C1C2F843E00CA0F5C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B17F8991C2F843E00CA0F5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B17F8AD1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		3B17F8B21C2F843E00CA0F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		3B17F8B31C2F843E00CA0F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		3B17F8B51C2F843E00CA0F5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlienBlueMusicFriendlyGfys/AlienBlueMusicFriendlyGfys-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		3B17F8B61C2F843E00CA0F5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlienBlueMusicFriendlyGfys/AlienBlueMusicFriendlyGfys-Prefix.pch";
+				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B17F8971C2F843E00CA0F5C /* Build configuration list for PBXProject "AlienBlueMusicFriendlyGfys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B17F8B21C2F843E00CA0F5C /* Debug */,
+				3B17F8B31C2F843E00CA0F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B17F8B41C2F843E00CA0F5C /* Build configuration list for PBXNativeTarget "AlienBlueMusicFriendlyGfys" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B17F8B51C2F843E00CA0F5C /* Debug */,
+				3B17F8B61C2F843E00CA0F5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B17F8941C2F843E00CA0F5C /* Project object */;
+}
