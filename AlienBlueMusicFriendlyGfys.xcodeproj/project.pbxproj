@@ -9,18 +9,21 @@
 /* Begin PBXBuildFile section */
 		3B17F8A21C2F843E00CA0F5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B17F8A11C2F843E00CA0F5C /* Foundation.framework */; };
 		3B17F8AD1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3B17F8AC1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.mm */; };
+		3B17F8B81C2F845400CA0F5C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B17F8B71C2F845400CA0F5C /* AVFoundation.framework */; };
+		3B17F8BA1C2F846100CA0F5C /* libsubstrate.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B17F8B91C2F846100CA0F5C /* libsubstrate.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3B17F89E1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = AlienBlueMusicFriendlyGfys.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B17F8A11C2F843E00CA0F5C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3B17F8A61C2F843E00CA0F5C /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
 		3B17F8A71C2F843E00CA0F5C /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
 		3B17F8A91C2F843E00CA0F5C /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
 		3B17F8AA1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlienBlueMusicFriendlyGfys-Prefix.pch"; sourceTree = "<group>"; };
-		3B17F8AB1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.xm */ = {isa = PBXFileReference; lastKnownFileType = text; path = AlienBlueMusicFriendlyGfys.xm; sourceTree = "<group>"; };
+		3B17F8AB1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.xm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp.preprocessed; path = AlienBlueMusicFriendlyGfys.xm; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		3B17F8AC1C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AlienBlueMusicFriendlyGfys.mm; sourceTree = "<group>"; };
 		3B17F8B11C2F843E00CA0F5C /* AlienBlueMusicFriendlyGfys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = AlienBlueMusicFriendlyGfys.plist; path = Package/Library/MobileSubstrate/DynamicLibraries/AlienBlueMusicFriendlyGfys.plist; sourceTree = "<group>"; };
+		3B17F8B71C2F845400CA0F5C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3B17F8B91C2F846100CA0F5C /* libsubstrate.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsubstrate.dylib; path = ../../../../../opt/iOSOpenDev/lib/libsubstrate.dylib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B17F8BA1C2F846100CA0F5C /* libsubstrate.dylib in Frameworks */,
+				3B17F8B81C2F845400CA0F5C /* AVFoundation.framework in Frameworks */,
 				3B17F8A21C2F843E00CA0F5C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +60,8 @@
 		3B17F8A01C2F843E00CA0F5C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3B17F8B91C2F846100CA0F5C /* libsubstrate.dylib */,
+				3B17F8B71C2F845400CA0F5C /* AVFoundation.framework */,
 				3B17F8A11C2F843E00CA0F5C /* Foundation.framework */,
 			);
 			name = Frameworks;
@@ -83,7 +90,6 @@
 		3B17F8A51C2F843E00CA0F5C /* DEBIAN */ = {
 			isa = PBXGroup;
 			children = (
-				3B17F8A61C2F843E00CA0F5C /* control.txt */,
 				3B17F8A71C2F843E00CA0F5C /* control */,
 			);
 			name = DEBIAN;
@@ -287,6 +293,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlienBlueMusicFriendlyGfys/AlienBlueMusicFriendlyGfys-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -307,6 +317,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AlienBlueMusicFriendlyGfys/AlienBlueMusicFriendlyGfys-Prefix.pch";
 				INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/opt/iOSOpenDev/lib,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				iOSOpenDevBuildPackageOnAnyBuild = NO;
 				iOSOpenDevCopyOnBuild = NO;
@@ -337,6 +351,7 @@
 				3B17F8B61C2F843E00CA0F5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
